@@ -52,3 +52,89 @@ nav li:hover {
 nav li:hover::before {
     scale: 1;
 }
+
+
+
+/* Footer */
+
+.footer1 {
+    height: 572px;
+    background-image: url(./images/pen.png);
+    background-position: center;
+    padding-top: 100px;
+}
+
+.footer1 button {
+    border-radius: 50px;
+    width: 162px;
+    border: none;
+    font-weight: bold;
+    color: var(--col-violot);
+    font-size: 18px;
+    /* margin: 80px; */
+}
+
+/* footer */
+footer {
+    padding: 50px 180px;
+}
+
+footer img {
+    width: 180px;
+}
+
+footer .icons img {
+    width: 30px;
+}
+
+footer .iso {
+    display: flex;
+}
+
+footer .row1 {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: grey;
+}
+
+footer .row1 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--col-violot);
+    border-bottom: 1px solid var(--col-violot);
+    padding-bottom: 15px;
+}
+
+footer .row1 h4,
+strong {
+    color: var(--col-violot);
+}
+
+footer .row1 h4 {
+    font-size: 20px;
+}
+
+footer .row1 li {
+
+    margin-top: 20px;
+    width: 90%;
+    transition: 0.5s;
+}
+
+footer .row1 a:hover {
+    color: var(--col-violot);
+
+}
+
+footer .row1 li:hover {
+    color: var(--col-violot);
+    border-bottom: 1px solid var(--col-violot);
+
+}
+
+footer .row1 a {
+    text-decoration: none;
+    color: grey;
+
+}
