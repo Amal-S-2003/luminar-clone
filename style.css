@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
 :root {
     --col-violot: #6d1d8e;
@@ -26,7 +26,7 @@ nav ul {
     list-style: none;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 nav li {
@@ -53,7 +53,170 @@ nav li:hover::before {
     scale: 1;
 }
 
+/* Banner */
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(222, 204, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
 
+.banner img {
+    width: 100%;
+}
+
+.banner h1 {
+    color: var(--col-violot);
+}
+
+.banner h4 {
+    color: var(--col-violot);
+    font-weight: 700;
+}
+
+.banner .b-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner button {
+    width: 150px;
+    height: 45px;
+    background: var(--col-violot);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+}
+
+/* ===Banner2 ====*/
+.b2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.b2 h1 {
+    font-size: 55px;
+    color: var(--col-violot);
+}
+
+.b2 .search {
+    width: 100%;
+    margin: 10px 150px;
+    border-bottom: 2px rgb(233, 230, 230) solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b2 .search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: rgb(173, 169, 169);
+    font-size: 25px;
+    padding: 0px 30px;
+}
+
+/* LT */
+.lt {
+    display: flex;
+    height: 760px;
+    background: rgb(247, 243, 244);
+}
+
+.lt img {
+    height: 760px;
+}
+
+
+.lt .points .icon {
+    height: 32px;
+    font-weight: bold;
+}
+
+.lt .texts {
+    padding-top: 50px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lt .texts h1 {
+    font-size: 65px;
+    color: var(--col-violot);
+}
+
+.lt .texts p {
+    font-size: 15px;
+}
+
+/* Cards */
+.training-program-column {
+    padding: 2.5rem 2rem .5rem 1rem;
+}
+.card {
+    /* width: 333px; */
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: var(--col-violot);
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.card h5,
+span {
+    color: var(--col-violot);
+    font-weight: bold;
+}
+
+.card .svg {
+    width: 180px;
+    height: 150px;
+    background: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card .svg img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+.card button{
+    background-color: #fff;
+    width: 150px;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px solid #6d1d8e;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6d1d8e;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.card button:hover{
+    background: var(--col-violot);
+    color: #fff;
+}
 
 /* Footer */
 
