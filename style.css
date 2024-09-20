@@ -26,7 +26,6 @@ nav ul {
     list-style: none;
     font-size: 20px;
     font-weight: 600;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 nav li {
@@ -49,9 +48,18 @@ nav li:hover {
     color: var(--col-violot);
 }
 
+nav li.active {
+    color: var(--col-violot);
+}
+
 nav li:hover::before {
     scale: 1;
 }
+
+nav li.active::before {
+    scale: 1;
+}
+
 
 /* Banner */
 .banner {
@@ -163,20 +171,55 @@ nav li:hover::before {
 .training-program-column {
     padding: 2.5rem 2rem .5rem 1rem;
 }
+
 .card {
     /* width: 333px; */
     height: auto;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
     border-radius: 1rem;
+    min-height: 700px;
+    background: #c7c7c8;
+    border: none;
+}
+#card{
+    background: #f8f8f8;
+}
+.card:hover {
+    background-color: #fff;
+    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.card:hover #cardbtn {
+    background: var(--col-violot);
+    color: #fff;
+}
+
+.card:hover .svg {
+    background: var(--col-violot);
+}
+
+.card:hover .svg1 {
+    fill: #ececec;
+    stroke: #6d1d8e;
+}
+
+.card:hover .svg2 {
+    stroke: #ececec;
+    fill: #6d1d8e;
 }
 
 .card h1 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--col-violot);
     margin-top: 2.2rem;
     margin-bottom: 2.2rem;
+
+}
+
+.card .d2 {
+    padding: 5px;
 }
 
 .card h5,
@@ -198,9 +241,9 @@ span {
 .card .svg img {
     width: 50%;
     height: 50%;
-    object-fit: contain;
 }
-.card button{
+
+.card button {
     background-color: #fff;
     width: 150px;
     height: 45px;
@@ -212,10 +255,6 @@ span {
     color: #6d1d8e;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-.card button:hover{
-    background: var(--col-violot);
-    color: #fff;
 }
 
 /* Footer */
@@ -300,4 +339,15 @@ footer .row1 a {
     text-decoration: none;
     color: grey;
 
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.footer2 b {
+    color: var(--col-violot);
 }
