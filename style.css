@@ -77,6 +77,8 @@ nav li.active::before {
 
 .banner h1 {
     color: var(--col-violot);
+    font-family: "Kaisei HarunoUmi";
+    font-weight: bold;
 }
 
 .banner h4 {
@@ -114,6 +116,8 @@ nav li.active::before {
 .b2 h1 {
     font-size: 55px;
     color: var(--col-violot);
+    font-family: "Kaisei HarunoUmi";
+    font-weight: bold;
 }
 
 .b2 .search {
@@ -122,6 +126,8 @@ nav li.active::before {
     border-bottom: 2px rgb(233, 230, 230) solid;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
 }
 
 .b2 .search input {
@@ -129,7 +135,7 @@ nav li.active::before {
     outline: none;
     border: none;
     color: rgb(173, 169, 169);
-    font-size: 25px;
+    font-size: 20px;
     padding: 0px 30px;
 }
 
